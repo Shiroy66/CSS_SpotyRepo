@@ -7,51 +7,94 @@ White: #FFF
 
 */
 
-*{
-    font-family: 'Montserrat';
+* {
+  font-family: "Montserrat";
 }
-body{
-    margin: 0px;
+body {
+  margin: 0px;
 }
-.container-head{
-    padding: 10px 0px;
-    height: 40px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    background-color: white;
-    position: fixed;
-    
-    
-    
+.container-head {
+  padding: 10px 0px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  position: fixed;
 }
-.logo{
-    padding-left: 2%;
-}   
-.links{
-    padding-right: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    
+.logo {
+  padding-left: 2%;
 }
-.header{
-    margin: 0px;
-    height: 500px;
-    background-image: url("../images/landing.jpg");
-    background-size:cover;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    
+.links {
+  padding-right: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
 }
-h1{
-    width: 100%;
-    text-align: center;
+.header {
+  margin: 0px;
+  height: 500px;
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
-
+.body {
+  text-align: center;
+}
+.container-section {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center; /* Alinea verticalmente los divs al centro */
+}
+.container-footer {
+  background-color: #00b172;
+  background-image: url("../images/spotify-icon-white.png");
+  background-size: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10%;
+  margin: 0% 2%;
+}
+.Kayne {
+  border-bottom: 2px solid;
+  display: inline-block; /* Para que el borde solo ocupe el ancho del texto */
+  margin-bottom: 40px;
+}
+.title{
+    border-bottom: 2px solid #00b172;
+    display: inline-block;
+}
+[class^="footer-"] {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+[class^="section-"] {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center; /* Alinea verticalmente los divs al centro */
+}
+h1 {
+  width: 100%;
+  text-align: center;
+}
+h4 {
+  color: #00b172;
+}
