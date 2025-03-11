@@ -73,9 +73,9 @@ body {
   display: inline-block; /* Para que el borde solo ocupe el ancho del texto */
   margin-bottom: 40px;
 }
-.title{
-    border-bottom: 2px solid #00b172;
-    display: inline-block;
+.title {
+  border-bottom: 2px solid #00b172;
+  display: inline-block;
 }
 [class^="footer-"] {
   display: flex;
@@ -97,4 +97,38 @@ h1 {
 }
 h4 {
   color: #00b172;
+}
+
+/* Estilos para móviles (hasta 768px) */
+@media (max-width: 768px) {
+  h1{
+    color:red;
+  }
+}
+/* Estilos para tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1{
+    color:green;
+  }
+  .container-footer{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-position:top;
+    background-size: 10%;
+    /*background-image: none;*/
+  }
+  [class^="footer-"] {
+  align-items: center;
+  }
+  .footer-2{
+    padding-top:5%;
+  }
+}
+
+/* Estilos para escritorios (más de 1024px) */
+@media (min-width: 1025px) {
+  h1{
+    color:blue;
+  }
 }
